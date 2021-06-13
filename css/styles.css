@@ -89,8 +89,9 @@ button {
     height: 22px;
     fill:var(--social-icons-color);
 }
-.social-icon:hover,
-.social-icon:focus{fill: var(--white-color);}
+.social-icon-link:hover svg,
+.social-icon-link:focus svg {fill: var(--white-color);}
+
 .social-icon-link:hover,
 .social-icon-link:focus{background-color:var(--accent-color);}
 
@@ -151,6 +152,9 @@ button {
 .nav-list .link{
     display: block;
 }
+.nav .link:hover,
+.nav .link:focus{color: var(--accent-color);}
+
 /*header-contacts*/
 .header-contacts{
     color: var(--small-text-color);
@@ -162,25 +166,19 @@ button {
 .header-contacts .item + .item{
     margin-left: 50px;
 }
-.header-contacts .item:nth-child(1)::before{
-    background-image: url(../images/icons/contacts-icons/mail.svg);
-    height: 12px;
-    width: 16px;
-}
-.header-contacts .item:nth-child(2)::before{
-    background-image: url(../images/icons/contacts-icons/smartphone.svg);
-    height: 16px;
-    width: 10px;
-}
 .address {color: var(--small-text-color);}
-.nav-color:hover, 
-.nav-color:focus {color: var(--accent-color);}
+
 .icon-contacts{
     margin-right: 10px;
     fill: var(--small-text-color);
 }
-.icon-contacts:hover,
-.icon-contacts:focus{fill: var(--accent-color);}
+.header-contacts .link:hover svg,
+.header-contacts .link:focus svg{fill:var(--accent-color);fill:var(--accent-color)}
+.header-contacts .link:hover,
+.header-contacts .link:focus{color: var(--accent-color);
+fill:var(--accent-color)}
+
+
 
 /*HERO Styles*/
 .hero{
@@ -414,8 +412,8 @@ button {
     margin: 16px 32px;
     fill:var(--social-icons-color);
 }
-.client-icon:hover,
-.client-icon:focus{fill: var(--accent-color);}
+.client a:hover svg,
+.client a:focus svg{fill: var(--accent-color);}
 .client-link:hover,
 .client-link:focus{border-color: var(--accent-color);}
    
@@ -460,12 +458,11 @@ button {
 }
 .portfolio-button button:hover,
 .portfolio-button button:focus{box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;}
-.all-portfolio-button:hover, 
-.all-portfolio-button:focus {
+    border-radius: 4px;
     background: var(--accent-color);
     color: var(--white-color);
 }
+
 
 /*img-portfolio styles*/
 .img-portfolio .list{
